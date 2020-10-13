@@ -16,6 +16,7 @@ Example 1
 
 > This text is simple to read!
 EASY
+
 Example 2
 
 > This text is hard to read. It contains a lot of sentences as well as a lot of words in each sentence.
@@ -39,6 +40,7 @@ Example 1
 
 > This text is simple to read! It has on average less than 10 words per sentence.
 EASY
+
 Example 2
 
 > This text is hard to read. It contains a lot of sentenses as well as a lot of words in each sentence
@@ -76,6 +78,7 @@ Sentences: 6
 Characters: 580
 The score is: 12.86
 This text should be understood by 18-24 year olds.
+
 Example 2
 
 > java Main in.txt
@@ -87,5 +90,3 @@ Sentences: 10
 Characters: 476
 The score is: 5.98
 This text should be understood by 11-12 year olds.
-
-
