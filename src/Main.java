@@ -27,9 +27,19 @@ public class Main {
             characters++;
         }
         System.out.println("Characters: " + characters);
+
+        // calculate score
+        double score = 4.71 * ((double) characters / (double) words)
+                + 0.5 * ((double) words / (double) sentences) - 21.43;
+        System.out.printf("The score is: %.2f", score);
+
+        
+
     }
 
     public static String readFile(String fileName) throws IOException {
         return new String(Files.readAllBytes(Paths.get(fileName)));
     }
+
 }
+
