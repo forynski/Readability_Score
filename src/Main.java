@@ -11,10 +11,20 @@ public class Main {
         File file = new File(args[0]);
         String text = readFile(file.toString());
         System.out.println(text);
+
+        // characters counter
+        String whitespacesRemover = text.replaceAll("\\s+","").toString();
+        int characters = 0;
+        for (int i = 0; i < whitespacesRemover.length(); i++) {
+            characters++;
+        }
+
+        
+        System.out.println(characters);
+
     }
 
     public static String readFile(String fileName) throws IOException {
         return new String(Files.readAllBytes(Paths.get(fileName)));
     }
 }
-
