@@ -1,16 +1,20 @@
 package readability;
 
-import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Main {
-    public static void main(String[] args) {
-        String[] sentences = new Scanner(System.in).nextLine().split("[.!?]");
-        int linesCounter = sentences.length;
-        int words = 0;
 
-        for (String sentence : sentences) {
-            words += sentence.split("\\s+").length;
-        }
-        System.out.println(words/linesCounter <= 10 ? "EASY" : "HARD");
+    public static void main(String[] args) throws IOException {
+        File file = new File(args[0]);
+        String text = readFile(file.toString());
+        System.out.println(text);
+    }
+
+    public static String readFile(String fileName) throws IOException {
+        return new String(Files.readAllBytes(Paths.get(fileName)));
     }
 }
+
