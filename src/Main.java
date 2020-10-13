@@ -12,16 +12,21 @@ public class Main {
         String text = readFile(file.toString());
         System.out.println(text);
 
+        // words counter
+        int words = text.split("\\w+").length ;
+        System.out.println("Words: " + words);
+
+        // sentences counter
+        int sentences = text.split("[.!?]").length;
+        System.out.println("Sentences: " + sentences);
+
         // characters counter
         String whitespacesRemover = text.replaceAll("\\s+","").toString();
         int characters = 0;
         for (int i = 0; i < whitespacesRemover.length(); i++) {
             characters++;
         }
-
-        
-        System.out.println(characters);
-
+        System.out.println("Characters: " + characters);
     }
 
     public static String readFile(String fileName) throws IOException {
