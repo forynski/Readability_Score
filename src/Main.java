@@ -14,8 +14,8 @@ public class Main {
 
         // words counter
 //        int words = text.split("\\w+").length ;
-//        int words = text.split("\\w+").length ;
-        int words = text.replaceAll("[0-9]", "").split("\\w+").length ;
+        int words = text.split("\\s+").length;
+//        int words = text.replaceAll("[0-9]", "").split("\\w+").length;
 
         System.out.println("Words: " + words);
 
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Sentences: " + sentences);
 
         // characters counter
-        String whitespacesRemover = text.replaceAll("\\s+","").toString();
+        String whitespacesRemover = text.replaceAll("\\s+","");
         int characters = 0;
         for (int i = 0; i < whitespacesRemover.length(); i++) {
             characters++;
@@ -91,3 +91,5 @@ public class Main {
     }
 
 }
+
+
