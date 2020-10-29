@@ -48,7 +48,6 @@ Example 2
 HARD
 
 # What you'll do in this stage 3/4: Score!
-Description
 In this stage, you will program the Automated readability index. It was introduced in 1968 and a lot of research works rely on this. The index is calculated by the following ARI formula (https://en.wikipedia.org/wiki/Automated_readability_index).
 
 You can look at different ages corresponding to the different scores by the table in this article.
@@ -93,9 +92,6 @@ The score is: 5.98
 This text should be understood by 11-12 year olds.
 
 # Work on project. Stage 4/4: More parameters
-
-Description
-
 In this stage, you should implement various other scientific approaches to calculate a readability score.
 
 Take a look at different ages and corresponding scores in the table in this article (https://en.wikipedia.org/wiki/Automated_readability_index). This table is suitable for all the algorithms described in this stage. To calculate the age use the upper bound of the range. For example, if the range is 12-13 year olds then it's upper bound is 13 year olds.
